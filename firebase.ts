@@ -6,7 +6,7 @@ import { getStorage } from 'firebase/storage';
 
 /**
  * Firebase configuration for project: nano-banana-c89ab
- * Updated with production-ready keys provided by the user.
+ * Note: These keys are restricted to the authorized domain for security.
  */
 const firebaseConfig = {
   apiKey: "AIzaSyBkIzIaZYQJKlHoDD7OQmRSJr9HSeO75d0",
