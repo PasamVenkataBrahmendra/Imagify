@@ -1,11 +1,20 @@
-<div align="center">
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+# Imagify AI Deployment Instructions
 
-  <h1>Built with AI Studio</h2>
+## Deploying to Netlify
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+1. **Push to GitHub**: Push your current project code to a GitHub repository.
+2. **Connect to Netlify**: 
+   - Log in to Netlify.
+   - Click "Add new site" > "Import from existing project".
+   - Select your GitHub repository.
+3. **Environment Variables**:
+   - During the "Build & deploy" step, or after creation under **Site settings > Environment variables**, add the following:
+     - `API_KEY`: Your Google Gemini API Key.
+4. **Deploy**: Click "Deploy site".
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
-
-</div>
+## Firebase Setup
+Ensure you have enabled the following in your Firebase Console:
+1. **Authentication**: Enable Email/Password and Google Sign-in.
+2. **Firestore**: Create a database in "Production mode" and apply the rules from `firestore-rules.txt`.
+3. **Storage**: Enable Storage and apply the rules from `storage-rules.txt`.

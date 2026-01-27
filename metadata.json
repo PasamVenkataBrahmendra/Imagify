@@ -1,0 +1,7 @@
+{
+  "name": "PersonaAI - Advanced Image & Fit Analysis",
+  "description": "A premium AI platform for text-to-image generation, identity-preserving image combination, and virtual outfit fit checks powered by Gemini Nano Banana.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
