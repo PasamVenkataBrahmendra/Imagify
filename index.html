@@ -22,11 +22,6 @@
             to { opacity: 1; transform: translateY(0); }
         }
         .no-scrollbar::-webkit-scrollbar { display: none; }
-        
-        /* Smooth transitions for theme switching */
-        .theme-transition {
-            transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
-        }
     </style>
     <script>
         tailwind.config = {
@@ -50,25 +45,18 @@
 <script type="importmap">
 {
   "imports": {
-    "react": "https://esm.sh/react@19.0.0",
-    "react-dom": "https://esm.sh/react-dom@19.0.0",
-    "react-dom/client": "https://esm.sh/react-dom@19.0.0/client",
-    "@google/genai": "https://esm.sh/@google/genai@1.3.2",
-    "lucide-react": "https://esm.sh/lucide-react@0.460.0",
-    "firebase/app": "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js",
-    "firebase/auth": "https://www.gstatic.com/firebasejs/11.0.1/firebase-auth.js",
-    "firebase/firestore": "https://www.gstatic.com/firebasejs/11.0.1/firebase-firestore.js",
-    "firebase/storage": "https://www.gstatic.com/firebasejs/11.0.1/firebase-storage.js",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
     "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "@google/genai": "https://esm.sh/@google/genai@^1.38.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "@supabase/supabase-js": "https://esm.sh/@supabase/supabase-js@^2.39.7",
     "firebase/": "https://esm.sh/firebase@^12.8.0/"
   }
 }
 </script>
 </head>
-<body class="bg-white text-slate-900 dark:bg-softdark dark:text-slate-100 transition-colors duration-300 bg-pattern min-h-screen theme-transition">
+<body class="bg-white text-slate-900 dark:bg-softdark dark:text-slate-100 transition-colors duration-300 bg-pattern">
     <div id="root"></div>
-    <!-- Explicitly load the application entry point -->
-    <script type="module" src="./index.tsx"></script>
 </body>
 </html>
